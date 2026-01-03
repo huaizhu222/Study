@@ -14,6 +14,7 @@ type Test struct {
 }
 
 var mutex sync.Mutex
+var mx sync.RWMutex
 var mp sync.Map
 var wg sync.WaitGroup
 
@@ -32,7 +33,6 @@ func main() {
 	})
 	a.Run("127.0.0.1:8080")
 	http.ListenAndServe(":8091", nil)
-
 	// runtime.Gosched()
 	// mp := make(map[string]string)
 	// mp["2"] =  "1"
