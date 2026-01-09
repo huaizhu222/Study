@@ -17,7 +17,6 @@ func newRouter() *router {
 	}
 }
 
-// Only one * is allowed
 func parsePattern(pattern string) []string {
 	vs := strings.Split(pattern, "/")
 
@@ -87,4 +86,3 @@ func (r *router) handle(c *Context) {
 	}
 	c.Next()
 }
-
