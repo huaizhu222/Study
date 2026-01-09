@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
-	"text/template"
 	"time"
 
 	"Rpc.Study.go/simple_gin/gee"

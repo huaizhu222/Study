@@ -1,11 +1,11 @@
 package gee
 
 import (
+	"html/template"
 	"log"
 	"net/http"
 	"path"
 	"strings"
-	"text/template"
 )
 
 type HandlerFunc func(*Context)
